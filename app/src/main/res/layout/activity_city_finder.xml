@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".cityFinder">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/left"
+        android:id="@+id/backButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/locationButton"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="155dp"
+        android:layout_marginLeft="340dp"
+        android:src="@drawable/location"
+        android:text="#Seoul"
+        android:textColor="#ffffff"
+        android:textSize="15sp">
+    </ImageView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:hint="도시 이름을 입력하시오."
+        android:layout_marginLeft="30dp"
+        android:textSize="15sp"
+        android:background="@drawable/edittextdesign"
+        android:textColor="@color/black"
+        android:imeOptions="actionGo"
+        android:id="@+id/searchCity"
+        android:inputType="textAutoCorrect"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_marginRight="40dp">
+
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <android.widget.Button
+            android:id="@+id/seoulButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            android:text="#Seoul"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <android.widget.Button
+            android:id="@+id/londonButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            android:text="#London"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <android.widget.Button
+            android:id="@+id/parisButton"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            android:text="#Paris"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

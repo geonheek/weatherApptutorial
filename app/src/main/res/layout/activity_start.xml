@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:text="Want to Know the Weather?"
+        android:paddingStart="30sp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="50dp"
+        android:gravity="left" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/weatherIcon"
+        android:src="@drawable/forecast"
+        android:layout_marginTop="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:gravity="right"
+        android:paddingStart="60sp"
+        android:text="Then Click the button below!"
+        android:textColor="#ffffff"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp">
+
+        <!-- 로그인 버튼 -->
+        <android.widget.Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="로그인"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+        <!-- 회원가입 버튼 -->
+        <android.widget.Button
+            android:id="@+id/signUp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="회원가입"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/roundedbutton"
+            android:textColor="#ffffff"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
